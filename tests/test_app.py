@@ -11,3 +11,9 @@ def test_hello_world():
         response = client.get("/")
         assert response.status_code == 200
         assert response.data == b"Hello, World! This is a basic Flask app...."
+
+def test_hello():
+    with app.test_client() as client:
+        response = client.get("/hello")
+        assert response.status_code == 200
+        assert response.data == b"Hello, no World!"

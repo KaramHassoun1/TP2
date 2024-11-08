@@ -23,5 +23,4 @@ jobs:
         uses: sonarsource/sonarqube-scan-action@v2.1.0
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: " http://localhost:9000"
-          # SONAR_PROJECT_KEY: "KaramHassoun1_TP2"
+          SONAR_HOST_URL: "https://sonarcloud.io"

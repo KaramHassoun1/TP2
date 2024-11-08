@@ -13,11 +13,6 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.11'
-      - name: Set up Java 17
-        uses: actions/setup-java@v2
-        with:
-          distribution: 'adopt'
-          java-version: '17'  
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -29,3 +24,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: "https://sonarcloud.io"
+          SONAR_PROJECT_KEY: "KaramHassoun1_TP2"

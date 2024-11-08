@@ -34,6 +34,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           JAVA_HOME: /opt/hostedtoolcache/Java_Adopt_jdk/17*/x64  # Enforcing Java 17 path
+          PATH: "/opt/hostedtoolcache/Java_Adopt_jdk/17*/x64/bin:${{ github.workspace }}/sonar-scanner/bin:${PATH}"
         run: |
           sonar-scanner -X \
           -Dsonar.projectKey="KaramHassoun1_TP2" \

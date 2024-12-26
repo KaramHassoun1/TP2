@@ -9,7 +9,7 @@ filelock==3.16.1
 Flask==3.0.3
 iniconfig @ file:///home/linux1/recipes/ci/iniconfig_1610983019677/work
 itsdangerous==2.2.0
-Jinja2==3.1.4
+Jinja2==3.1.5
 MarkupSafe==3.0.2
 packaging @ file:///croot/packaging_1720101850331/work
 platformdirs==4.3.6
